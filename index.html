@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Ahorcado Online</title>
+</head>
+<body>
+    <div class="bienvenida">
+        <h1> Bienvenido a mi primer intento de ahorcado </h1>
+        <h2> Mi nombre es Boris Sebastian Salinas y soy un estudiante <br> de analista en sistemas en la ORT buscando mi primer trabajo en el rubro </h2>
+    </div>
+    <div class="juego" >
+        <img src="Fotos/ahorcado_completo.png" id="colgado">
+        <input style="font-size: 2em;" id="palabraElegida" readonly>
+        <h1 id="victoria" > SOS MALISIMO </h1>
+    </div>
+
+
+    <div class="respuesta" >
+        <h3> Ingrese aquí abajo 1 sóla letra a probar por favor </h3>
+        <input type="text" name="respuesta" id="respuesta" maxlength="1" >
+        <button onclick="checkLetra()" > Prueba Suerte! </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
