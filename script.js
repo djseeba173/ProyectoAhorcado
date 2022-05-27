@@ -15,6 +15,7 @@ while(c < palabraChosen.length){
 }
 let respuesta = document.getElementById('palabraElegida')
 respuesta.value = rta;
+let perdiste = false;
 
 
 function checkLetra(){
@@ -41,21 +42,23 @@ function checkLetra(){
         respuesta.value = rta;
     }else{
         debugger;
-        switch(colgado.src){
-            case 'Fotos/ahorcado_completo.png':
-                colgado.src = "Fotos/ahorcado_sin_pierna_derecha.jpg"
-                break;
-            case 'Fotos/ahorcado_sin_pierna_derecha.jpg':
-                colgado.src = "Fotos/ahorcado_sin_dos_piernas.jpg"
-                break;
-            case "Fotos/ahorcado_sin_dos_piernas.jpg":
-                colgado.src = "Fotos/ahorcado_sin_brazo_izquierdo.jpg"
-                break;
-            case "Fotos/ahorcado_sin_brazo_izquierdo.jpg":
-                colgado.src = "Fotos/ahorcado_sin_dos_brazos.jpg";
-                break;
-            case "Fotos/ahorcado_sin_dos_brazos.jpg":
-                colgado.src = "Fotos/ahorcado_solo_cabeza.jpg"         
+        var link = colgado.src;
+        if(link.includes("ahorcado_completo")){
+            debugger;
+            colgado.src = "Fotos/ahorcado_sin_pierna_derecha.jpg"
+        }else if( link.includes("ahorcado_sin_pierna_derecha")){
+            debugger;
+            colgado.src = "Fotos/ahorcado_sin_dos_piernas.jpg"
+        }else if(link.includes("ahorcado_sin_dos_piernas.jpg")){
+            debugger;
+            colgado.src = "Fotos/ahorcado_sin_brazo_izquierdo.jpg"
+        }else if(link.includes("ahorcado_sin_brazo_izquierdo.jpg")){
+            debugger;
+            colgado.src = "Fotos/ahorcado_sin_dos_brazos.jpg"
+        }else if (link.includes("ahorcado_sin_dos_brazos.jpg")){
+            debugger;
+            colgado.src = "Fotos/ahorcado_solo_cabeza.jpg"
+            perdiste = true;
         }
         debugger;
     }
@@ -63,8 +66,13 @@ function checkLetra(){
     debugger;
     if(rta == palabraChosen){
         debugger;
-        var cosa = document.getElementById('victoria')
+        var cosa = document.getElementById('victoria');
         debugger;
-        cosa.innerHTML = 'SOS UN NAZHEI'
+        cosa.innerHTML = 'SOS UN NAZHEI';
+    }else if (perdiste){
+        debugger;
+        var cosa = document.getElementById('victoria');
+        debugger;
+        cosa.innerHTML = 'Perdiste como un perdedor. Reinicia la pagina e intenta de nuevo'
     }
 }
