@@ -42,20 +42,20 @@ function checkLetra(){
     }else{
         debugger;
         switch(colgado.src){
-            case 'http://127.0.0.1:5500/Fotos/ahorcado_completo.png':
-                colgado.src = "http://127.0.0.1:5500/Fotos/ahorcado_sin_pierna_derecha.jpg"
+            case 'Fotos/ahorcado_completo.png':
+                colgado.src = "Fotos/ahorcado_sin_pierna_derecha.jpg"
                 break;
-            case 'http://127.0.0.1:5500/Fotos/ahorcado_sin_pierna_derecha.jpg':
-                colgado.src = "http://127.0.0.1:5500/Fotos/ahorcado_sin_dos_piernas.jpg"
+            case 'Fotos/ahorcado_sin_pierna_derecha.jpg':
+                colgado.src = "Fotos/ahorcado_sin_dos_piernas.jpg"
                 break;
-            case "http://127.0.0.1:5500/Fotos/ahorcado_sin_dos_piernas.jpg":
-                colgado.src = "http://127.0.0.1:5500/Fotos/ahorcado_sin_brazo_izquierdo.jpg"
+            case "Fotos/ahorcado_sin_dos_piernas.jpg":
+                colgado.src = "Fotos/ahorcado_sin_brazo_izquierdo.jpg"
                 break;
-            case "http://127.0.0.1:5500/Fotos/ahorcado_sin_brazo_izquierdo.jpg":
-                colgado.src = "http://127.0.0.1:5500/Fotos/ahorcado_sin_dos_brazos.jpg";
+            case "Fotos/ahorcado_sin_brazo_izquierdo.jpg":
+                colgado.src = "Fotos/ahorcado_sin_dos_brazos.jpg";
                 break;
-            case "http://127.0.0.1:5500/Fotos/ahorcado_sin_dos_brazos.jpg":
-                colgado.src = "http://127.0.0.1:5500/Fotos/ahorcado_solo_cabeza.jpg"         
+            case "Fotos/ahorcado_sin_dos_brazos.jpg":
+                colgado.src = "Fotos/ahorcado_solo_cabeza.jpg"         
         }
         debugger;
     }
