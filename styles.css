@@ -1,3 +1,45 @@
-* :not(#palabraElegida) {
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  background: rgb(238, 175, 186);
+}
+
+* {
+  text-align: center;
+  font-size: 14.5px;
+  font-family: "Poppins", sans-serif;
+  margin: 2px;
+}
+
+.bienvenida h1,
+.bienvenida h2 {
+  font-size: 23px;
+  background-color: #87ceeb;
+}
+
+.respuesta {
+  background-color: #87ceeb;
+}
+
+img {
+  width: 450px;
+  height: 350px;
+}
+
+.respuesta h3,
+.respuesta h1 {
+  font-size: 20px;
+}
+
+button {
+  color: #ffffff;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
 }
