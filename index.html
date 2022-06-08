@@ -8,23 +8,25 @@
     <title>Ahorcado Online</title>
 </head>
 <body>
-    <div class="bienvenida">
-        <h1> ¡Bienvenido a mi primer intento de ahorcado! </h1>
-        <h2> Mi nombre es Boris Sebastian Salinas <br> Soy un estudiante de analista en sistemas en la ORT buscando mi primer trabajo en el rubro </h2>
-    </div>
-    <div class="juego" >
-        <img src="Fotos/ahorcado_completo.png" id="colgado">
-    </div>
+    <div class="container">
+        <div class="bienvenida">
+            <h1> ¡Bienvenido a mi primer intento de ahorcado! </h1>
+            <h2> Mi nombre es Boris Sebastian Salinas <br> Soy un estudiante de analista en sistemas en la ORT buscando mi primer trabajo en el rubro </h2>
+        </div>
+        <div class="juego" >
+            <img src="Fotos/ahorcado_completo.png" id="colgado">
+        </div>
+        
+        <div class="input">
+            <input id="palabraElegida" readonly>
+        </div>
     
-    <div class="input">
-        <input style="font-size: 2em;" id="palabraElegida" readonly>
-    </div>
-
-    <div class="respuesta" >
-        <h1 id="victoria" > ¡Dale que podes! </h1>
-        <h3> Ingrese aquí abajo 1 sóla letra a probar por favor </h3>
-        <input type="text" name="respuesta" id="respuesta" maxlength="1" >
-        <button onclick="checkLetra()" > Prueba Suerte! </button>
+        <div class="respuesta" >
+            <h1 id="victoria" > ¡Dale que podes! </h1>
+            <h3> Ingrese aquí abajo 1 sóla letra a probar por favor </h3>
+            <input type="text" name="respuesta" id="respuesta" maxlength="1" >
+            <button onclick="checkLetra()" > Prueba Suerte! </button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
